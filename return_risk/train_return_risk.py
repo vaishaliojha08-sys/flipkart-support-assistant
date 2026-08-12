@@ -548,17 +548,18 @@ for category in sorted(
     category_df = pd.DataFrame( 
         category_results 
         ) 
+
     
-    print( "\nPerformance by product category:" ) 
-    print( 
-        category_df.to_string( 
-            index=False, 
-            formatters={ 
-                "recall": "{:.4f}".format, 
-                "precision": "{:.4f}".format, 
-                }, 
-            ) 
-        )
+print( "\nPerformance by product category:" ) 
+print( 
+    category_df.to_string( 
+        index=False, 
+        formatters={ 
+            "recall": "{:.4f}".format, 
+            "precision": "{:.4f}".format, 
+            }, 
+        ) 
+    )
     
 
 # ------------------------------------------------------------ 
@@ -601,16 +602,17 @@ for payment_method in sorted(
     payment_df = pd.DataFrame( 
         payment_results 
         ) 
-    print( "\nPerformance by payment method:" ) 
-    print( 
-        payment_df.to_string( 
-            index=False, 
-            formatters={ 
-                "recall": "{:.4f}".format, 
-                "precision": "{:.4f}".format, 
-                }, 
-            ) 
-        )
+    
+
+print( "\nPerformance by payment method:" ) 
+print( 
+    payment_df.to_string( 
+        index=False, 
+        formatters={ 
+            "recall": "{:.4f}".format, 
+            "precision": "{:.4f}".format,                 }, 
+        ) 
+    )
     
 
 # ------------------------------------------------------------ 
