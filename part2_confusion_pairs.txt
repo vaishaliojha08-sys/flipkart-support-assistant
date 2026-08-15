@@ -1,0 +1,13 @@
+Top Fashion-MNIST Confusion Pairs
+============================================================
+
+T-shirt/top -> Shirt: 114 images
+Shirt -> T-shirt/top: 103 images
+Shirt -> Coat: 101 images
+Coat -> Shirt: 78 images
+Coat -> Pullover: 65 images
+Pullover -> Coat: 61 images
+Pullover -> Shirt: 56 images
+Shirt -> Pullover: 52 images
+Ankle boot -> Sneaker: 49 images
+Shirt -> Dress: 45 images
