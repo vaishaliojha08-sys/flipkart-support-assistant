@@ -1,6 +1,22 @@
+# Python virtual environment
 .venv/
+venv/
+env/
+
+# Python cache
 __pycache__/
+*.py[cod]
 *.pyc
-.DS_Store
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Part 2 cached feature files
+data/cached_features/
+
+# General OS files
+.DS_Store
+
+# IDE
 .vscode/
+.idea/
