@@ -28,7 +28,6 @@ print("Dataset shape:", df.shape)
 # 2. Separate features (X) and target (y)
 # ---------------------------------------------------------
 
-# 'returned' is the value we want our model to predict.
 y = df["returned"]
 
 # 'order_id' is only an identifier, so we don't use it as a
@@ -142,7 +141,7 @@ print("y_test:", y_test.shape)
 
 
 # ---------------------------------------------------------
-# 10. Transform both training and test data
+# 9. Transform both training and test data
 # ---------------------------------------------------------
 
 X_train_processed = preprocessor.fit_transform(X_train)
@@ -150,7 +149,7 @@ X_test_processed = preprocessor.transform(X_test)
 
 
 # ---------------------------------------------------------
-# 11. Check the transformed data
+# 10. Check the transformed data
 # ---------------------------------------------------------
 
 print("\nProcessed training data shape:")
@@ -160,7 +159,7 @@ print("\nProcessed test data shape:")
 print(X_test_processed.shape)
 
 # ------------------------------------------------------------
-# STEP 23 - DUMMY CLASSIFIER BASELINE 
+# 11. DUMMY CLASSIFIER BASELINE 
 # ------------------------------------------------------------
 print("\n" + "=" * 70) 
 print("STEP 23 - DUMMY CLASSIFIER BASELINE") 
@@ -200,7 +199,7 @@ print( "The DummyClassifier predicts the majority class for every order. "
       "and F1-score for returned orders." )
 
 # ------------------------------------------------------------
-# STEP 24 - LOGISTIC REGRESSION 
+# 12. LOGISTIC REGRESSION 
 # ------------------------------------------------------------
 print("\n" + "=" * 70) 
 print("STEP 24 - LOGISTIC REGRESSION") 
@@ -245,7 +244,7 @@ print( "Precision:", round(lr_precision, 4), )
 print( "ROC-AUC :", round(lr_roc_auc, 4), )
 
 # ------------------------------------------------------------
-# STEP 25 - LOGISTIC REGRESSION THRESHOLD SWEEP 
+# 13. LOGISTIC REGRESSION THRESHOLD SWEEP 
 # ------------------------------------------------------------
 print("\n" + "=" * 70) 
 print("STEP 25 - LOGISTIC REGRESSION THRESHOLD SWEEP") 
@@ -312,9 +311,9 @@ print( "Lowering the decision threshold makes the model more willing to "
       "more costly false negatives." )
 
 
-# ============================================================ 
-# STEP 26 - RANDOM FOREST + GRID SEARCH 
-# ============================================================ 
+# ------------------------------------------------------------
+# 14. RANDOM FOREST + GRID SEARCH 
+# ------------------------------------------------------------
 print("\n" + "=" * 70) 
 print("STEP 26 - RANDOM FOREST GRID SEARCH") 
 print("=" * 70) 
@@ -359,9 +358,9 @@ print( "\nBest cross-validated ROC-AUC:", round(grid_search.best_score_, 4), )
 best_rf_pipeline = ( grid_search.best_estimator_ )
 
 
-# ============================================================ 
-# STEP 27 - RANDOM FOREST TEST EVALUATION 
-# ============================================================ 
+# ------------------------------------------------------------
+# 15. RANDOM FOREST TEST EVALUATION 
+# ------------------------------------------------------------
 # Predict probability for returned = 1 
 y_prob_rf = best_rf_pipeline.predict_proba( 
     X_test 
@@ -389,9 +388,9 @@ print( "Test Recall:", round(rf_recall, 4), )
 print( "Test Precision:", round(rf_precision, 4), )
 
 
-# ============================================================ 
-# STEP 28 - RANDOM FOREST FEATURE IMPORTANCE 
-# ============================================================
+# ------------------------------------------------------------
+# 16. RANDOM FOREST FEATURE IMPORTANCE 
+# ------------------------------------------------------------
 
 # Get fitted preprocessing component 
 fitted_preprocessor = ( 
@@ -436,9 +435,9 @@ top5_features = (
 
 print( top5_features.to_string( index=False ) )
 
-# ============================================================ 
-# STEP 29 - PERMUTATION IMPORTANCE 
-# ============================================================
+# ------------------------------------------------------------
+# 17. PERMUTATION IMPORTANCE 
+# ------------------------------------------------------------
 
 # Use the fitted preprocessor to transform test data. 
 X_test_processed = ( 
@@ -498,9 +497,9 @@ print(
       "even when its actual predictive contribution on unseen data is small." 
       )
 
-# ============================================================ 
-# STEP 30 - SUBGROUP ANALYSIS 
-# ============================================================
+# ------------------------------------------------------------
+# 18. SUBGROUP ANALYSIS 
+# ------------------------------------------------------------
 
 # Create test-set results table 
 test_results = X_test.copy() 
@@ -648,9 +647,9 @@ print(
       )
 
 
-# ============================================================ 
-# STEP 31 - RANDOM FOREST THRESHOLD SWEEP 
-# ============================================================
+# ------------------------------------------------------------
+# 19. RANDOM FOREST THRESHOLD SWEEP 
+# ------------------------------------------------------------
 
 rf_threshold_results = [] 
 
@@ -724,9 +723,9 @@ print( rf_threshold_df.to_string(
 )
 
 
-# ============================================================ 
-# STEP 32 - SAVE FINAL RANDOM FOREST PIPELINE 
-# ============================================================
+# ------------------------------------------------------------
+# 20. SAVE FINAL RANDOM FOREST PIPELINE 
+# ------------------------------------------------------------
 
 # Create models directory 
 os.makedirs( 
@@ -773,9 +772,9 @@ print(
       )
 
 
-# ============================================================ 
-# STEP 33 - VERIFY SAVED MODEL 
-# ============================================================
+# ------------------------------------------------------------
+# 21. VERIFY SAVED MODEL 
+# ------------------------------------------------------------
 
 # ------------------------------------------------------------ 
 # Load the saved pipeline 

@@ -8,15 +8,6 @@ from torchvision import datasets, transforms, models
 from sklearn.model_selection import train_test_split
 
 
-# ============================================================
-# PART 2 - PRODUCT IMAGE CATEGORISER
-# DAY 3: DATASET + TRANSFER LEARNING + FEATURE EXTRACTION
-# ============================================================
-
-print("=" * 70)
-print("FLIPKART PRODUCT IMAGE CATEGORISER - DAY 3")
-print("=" * 70)
-
 # ------------------------------------------------------------
 # STEP 1 - CREATE REQUIRED DIRECTORIES
 # ------------------------------------------------------------
@@ -351,9 +342,9 @@ for epoch in range(EPOCHS):
         f"Epoch {epoch+1:02d}/{EPOCHS} | Loss: {avg_loss:.4f}"
     )
 
-# ============================================================
-# STEP 22 - SAVE CLASSIFIER HEAD
-# ============================================================
+# ------------------------------------------------------------
+# STEP 17 - SAVE CLASSIFIER HEAD
+# ------------------------------------------------------------
 
 classifier_path = (
     "models/classifier_head.pt"
@@ -378,7 +369,7 @@ print(
 )
 
 # ------------------------------------------------------------
-# STEP 17 - VALIDATION ACCURACY
+# STEP 18 - VALIDATION ACCURACY
 # ------------------------------------------------------------
 
 def calculate_accuracy(model, features, labels):
@@ -410,7 +401,7 @@ print("=" * 70)
 print(f"Validation Accuracy: {val_accuracy * 100:.2f}%")
 
 # ------------------------------------------------------------
-# STEP 18 - TRAINABLE PARAMETERS
+# STEP 19 - TRAINABLE PARAMETERS
 # ------------------------------------------------------------
 
 trainable = sum(
