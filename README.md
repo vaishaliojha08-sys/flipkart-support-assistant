@@ -45,7 +45,7 @@ Customer Support Query
 ├── part1_return_risk/
 │   └── training and evaluation code
 │
-├── part2_image_classifier/
+├── imageclassifier_image_classifier/
 │   └── training and evaluation code
 │
 ├── part3_support_agent/

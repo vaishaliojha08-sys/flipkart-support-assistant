@@ -1,0 +1,14 @@
+{
+  "title": "Damaged product policy",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "What should I do if my product arrives damaged?",
+      "response": {
+        "answer": "Customers should report a product that arrives damaged as soon as possible through the applicable support or return workflow. (Policy document: POL012)",
+        "source": "policy_kb",
+        "confidence": 0.7744
+      }
+    }
+  ]
+}

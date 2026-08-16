@@ -1,0 +1,14 @@
+{
+  "title": "Policy question - COD refund",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "How long does a COD refund take?",
+      "response": {
+        "answer": "For an eligible COD return, the refund is normally initiated after the returned item passes the required inspection. (Policy document: POL005)",
+        "source": "policy_kb",
+        "confidence": 0.7507
+      }
+    }
+  ]
+}

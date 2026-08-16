@@ -1,0 +1,35 @@
+{
+  "title": "Multi-turn conversation",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "Can you check order 987654 for return risk?",
+      "order_features": {
+        "product_category": "Electronics",
+        "price_inr": 8000,
+        "discount_pct": 10.0,
+        "payment_method": "Prepaid_Card",
+        "customer_tenure_days": 500,
+        "num_previous_orders": 12,
+        "num_previous_returns": 1,
+        "delivery_distance_km": 100.0,
+        "delivery_days": 4,
+        "is_weekend_order": 0,
+        "rating_given": 5.0
+      },
+      "response": {
+        "answer": "The predicted return probability is 29.84%, which places the order in the Low risk bucket. The bucket is calibrated using t*_rf = 0.5000.",
+        "source": "return_risk_tool",
+        "confidence": 0.2984
+      }
+    },
+    {
+      "user": "What risk bucket did you give that order?",
+      "response": {
+        "answer": "The predicted return probability is 29.84%, which places the order in the Low risk bucket. The bucket is calibrated using t*_rf = 0.5000.",
+        "source": "return_risk_tool",
+        "confidence": 0.2984
+      }
+    }
+  ]
+}

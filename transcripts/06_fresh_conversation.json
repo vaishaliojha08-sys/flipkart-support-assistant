@@ -1,0 +1,14 @@
+{
+  "title": "Fresh conversation state reset",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "What risk bucket did that order have?",
+      "response": {
+        "answer": "I can't provide a policy answer because the knowledge base did not contain sufficiently relevant information.",
+        "source": "policy_kb",
+        "confidence": 0.267
+      }
+    }
+  ]
+}

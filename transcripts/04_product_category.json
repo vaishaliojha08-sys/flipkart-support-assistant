@@ -1,0 +1,15 @@
+{
+  "title": "Product image classification",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "What product category does this image belong to? /Users/karthikrajkrishnakumar/VaishaliMasaiCourse/Projects/flipkart-support-assistant/data/sample_images/01_ankle_boot.png",
+      "image_path": "/Users/karthikrajkrishnakumar/VaishaliMasaiCourse/Projects/flipkart-support-assistant/data/sample_images/01_ankle_boot.png",
+      "response": {
+        "answer": "The image is classified as Ankle boot with 97.91% confidence.",
+        "source": "image_classifier_tool",
+        "confidence": 0.9791
+      }
+    }
+  ]
+}

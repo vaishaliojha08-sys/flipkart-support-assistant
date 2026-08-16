@@ -1,0 +1,14 @@
+{
+  "title": "Policy question - footwear return",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "What is the return window for footwear?",
+      "response": {
+        "answer": "Footwear can generally be returned within 7 days of delivery when it is unused and returned with the original packaging. (Policy document: POL002)",
+        "source": "policy_kb",
+        "confidence": 0.5942
+      }
+    }
+  ]
+}

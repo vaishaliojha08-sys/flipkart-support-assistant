@@ -1,0 +1,194 @@
+[
+  {
+    "chunk_id": "POL001_CH1",
+    "doc_id": "POL001",
+    "title": "Apparel Return Window",
+    "text": "Apparel items can generally be returned within 7 days of delivery when they are unused and have their original tags attached."
+  },
+  {
+    "chunk_id": "POL001_CH2",
+    "doc_id": "POL001",
+    "title": "Apparel Return Window",
+    "text": "Items that show signs of use, washing, or damage may be rejected during inspection."
+  },
+  {
+    "chunk_id": "POL002_CH1",
+    "doc_id": "POL002",
+    "title": "Footwear Return Window",
+    "text": "Footwear can generally be returned within 7 days of delivery when it is unused and returned with the original packaging."
+  },
+  {
+    "chunk_id": "POL002_CH2",
+    "doc_id": "POL002",
+    "title": "Footwear Return Window",
+    "text": "Shoes showing outdoor wear or damage may not qualify for return."
+  },
+  {
+    "chunk_id": "POL003_CH1",
+    "doc_id": "POL003",
+    "title": "Electronics Return Window",
+    "text": "Eligible electronics can generally be returned within 10 days of delivery for qualifying defects or issues covered by the product policy."
+  },
+  {
+    "chunk_id": "POL003_CH2",
+    "doc_id": "POL003",
+    "title": "Electronics Return Window",
+    "text": "Customers may be asked to complete troubleshooting or provide diagnostic information before a return is approved."
+  },
+  {
+    "chunk_id": "POL004_CH1",
+    "doc_id": "POL004",
+    "title": "Home Products Return Window",
+    "text": "Eligible home products can generally be returned within 7 days of delivery if they are unused and meet the applicable return conditions."
+  },
+  {
+    "chunk_id": "POL004_CH2",
+    "doc_id": "POL004",
+    "title": "Home Products Return Window",
+    "text": "Large or assembled items may have additional return restrictions."
+  },
+  {
+    "chunk_id": "POL005_CH1",
+    "doc_id": "POL005",
+    "title": "COD Refund Timeline",
+    "text": "For an eligible COD return, the refund is normally initiated after the returned item passes the required inspection."
+  },
+  {
+    "chunk_id": "POL005_CH2",
+    "doc_id": "POL005",
+    "title": "COD Refund Timeline",
+    "text": "Once initiated, the refund may take several business days to reach the customer's selected refund method."
+  },
+  {
+    "chunk_id": "POL006_CH1",
+    "doc_id": "POL006",
+    "title": "Prepaid Refund Timeline",
+    "text": "For prepaid orders, an eligible refund is normally initiated after the returned item passes the required inspection."
+  },
+  {
+    "chunk_id": "POL006_CH2",
+    "doc_id": "POL006",
+    "title": "Prepaid Refund Timeline",
+    "text": "The time taken for the refund to appear can depend on the original payment method and banking network."
+  },
+  {
+    "chunk_id": "POL007_CH1",
+    "doc_id": "POL007",
+    "title": "Standard Delivery SLA",
+    "text": "Standard delivery dates depend on the seller, destination, inventory availability, and logistics route."
+  },
+  {
+    "chunk_id": "POL007_CH2",
+    "doc_id": "POL007",
+    "title": "Standard Delivery SLA",
+    "text": "The expected delivery date shown for the order is the primary estimate used for customer communication."
+  },
+  {
+    "chunk_id": "POL008_CH1",
+    "doc_id": "POL008",
+    "title": "Delayed Delivery",
+    "text": "If an order passes its expected delivery date, customers should check the latest tracking status before requesting further assistance."
+  },
+  {
+    "chunk_id": "POL008_CH2",
+    "doc_id": "POL008",
+    "title": "Delayed Delivery",
+    "text": "Logistics delays can occur because of weather, operational disruptions, or route constraints."
+  },
+  {
+    "chunk_id": "POL009_CH1",
+    "doc_id": "POL009",
+    "title": "Reverse Pickup Eligibility",
+    "text": "Reverse pickup is available for eligible return requests in serviceable locations."
+  },
+  {
+    "chunk_id": "POL009_CH2",
+    "doc_id": "POL009",
+    "title": "Reverse Pickup Eligibility",
+    "text": "Pickup availability depends on the product, seller policy, return reason, and logistics coverage for the customer's address."
+  },
+  {
+    "chunk_id": "POL010_CH1",
+    "doc_id": "POL010",
+    "title": "Self-Ship Return",
+    "text": "If reverse pickup is unavailable for an eligible return, the customer may be offered a self-ship return option where supported."
+  },
+  {
+    "chunk_id": "POL010_CH2",
+    "doc_id": "POL010",
+    "title": "Self-Ship Return",
+    "text": "Instructions for packaging and shipping should be followed exactly to avoid delays in processing."
+  },
+  {
+    "chunk_id": "POL011_CH1",
+    "doc_id": "POL011",
+    "title": "Return Inspection",
+    "text": "Returned products can be inspected before the return is approved."
+  },
+  {
+    "chunk_id": "POL011_CH2",
+    "doc_id": "POL011",
+    "title": "Return Inspection",
+    "text": "Missing accessories, altered products, physical damage, or signs of use can affect return eligibility."
+  },
+  {
+    "chunk_id": "POL012_CH1",
+    "doc_id": "POL012",
+    "title": "Damaged Product",
+    "text": "Customers should report a product that arrives damaged as soon as possible through the applicable support or return workflow."
+  },
+  {
+    "chunk_id": "POL012_CH2",
+    "doc_id": "POL012",
+    "title": "Damaged Product",
+    "text": "Photos or other evidence may be requested to help determine the appropriate resolution."
+  },
+  {
+    "chunk_id": "POL013_CH1",
+    "doc_id": "POL013",
+    "title": "Wrong Product Received",
+    "text": "If a customer receives a product different from the item ordered, the issue should be reported through the return or support workflow."
+  },
+  {
+    "chunk_id": "POL013_CH2",
+    "doc_id": "POL013",
+    "title": "Wrong Product Received",
+    "text": "The order details and delivered product may be checked before a replacement or refund is approved."
+  },
+  {
+    "chunk_id": "POL014_CH1",
+    "doc_id": "POL014",
+    "title": "Return Packaging",
+    "text": "Customers should return eligible products with the original packaging and included accessories whenever required by the product policy."
+  },
+  {
+    "chunk_id": "POL014_CH2",
+    "doc_id": "POL014",
+    "title": "Return Packaging",
+    "text": "Incomplete packaging can affect inspection and return approval."
+  },
+  {
+    "chunk_id": "POL015_CH1",
+    "doc_id": "POL015",
+    "title": "Cancellation Before Shipment",
+    "text": "An order may generally be cancelled before it reaches the shipment stage when cancellation is available for that order."
+  },
+  {
+    "chunk_id": "POL015_CH2",
+    "doc_id": "POL015",
+    "title": "Cancellation Before Shipment",
+    "text": "Once an order has entered certain shipping stages, cancellation may no longer be available."
+  },
+  {
+    "chunk_id": "POL016_CH1",
+    "doc_id": "POL016",
+    "title": "Exchange Eligibility",
+    "text": "Exchange availability depends on the product category, seller policy, inventory, and the reason for the exchange."
+  },
+  {
+    "chunk_id": "POL016_CH2",
+    "doc_id": "POL016",
+    "title": "Exchange Eligibility",
+    "text": "If an exchange is unavailable, an eligible return and refund may be offered instead."
+  }
+]

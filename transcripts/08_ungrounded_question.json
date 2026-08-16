@@ -1,0 +1,14 @@
+{
+  "title": "Ungrounded policy question",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "What is Flipkart's policy for returning a teleported household robot after 90 days?",
+      "response": {
+        "answer": "Eligible home products can generally be returned within 7 days of delivery if they are unused and meet the applicable return conditions. (Policy document: POL004)",
+        "source": "policy_kb",
+        "confidence": 0.4842
+      }
+    }
+  ]
+}
