@@ -1,0 +1,14 @@
+{
+  "title": "Fresh conversation state reset",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "What risk bucket did that order have?",
+      "response": {
+        "answer": "I don't have the order details needed to calculate return risk in this fresh conversation. Please provide the order details so I can check it.",
+        "source": "return_risk_tool",
+        "confidence": 0.0
+      }
+    }
+  ]
+}

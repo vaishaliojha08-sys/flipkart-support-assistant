@@ -664,7 +664,7 @@ for i, row in enumerate(cm):
 
 np.savetxt(
 
-    "part2_confusion_matrix.csv",
+    "imageclassifier_confusion_matrix.csv",
 
     cm,
 
@@ -677,7 +677,7 @@ np.savetxt(
 
 print(
     "\nConfusion matrix saved to:"
-    "\npart2_confusion_matrix.csv"
+    "\nimageclassifier_confusion_matrix.csv"
 )
 
 
@@ -712,7 +712,7 @@ print(report)
 # ============================================================
 
 with open(
-    "part2_classification_report.txt",
+    "imageclassifier_classification_report.txt",
     "w"
 ) as file:
 
@@ -729,7 +729,7 @@ with open(
 
 print(
     "Classification report saved to:"
-    "\npart2_classification_report.txt"
+    "\nimageclassifier_classification_report.txt"
 )
 
 
@@ -815,7 +815,7 @@ for count, actual, predicted in confusion_pairs:
 # ============================================================
 
 with open(
-    "part2_confusion_pairs.txt",
+    "imageclassifier_confusion_pairs.txt",
     "w"
 ) as file:
 
@@ -839,7 +839,7 @@ with open(
 
 print(
     "\nConfusion-pair results saved to:"
-    "\npart2_confusion_pairs.txt"
+    "\nimageclassifier_confusion_pairs.txt"
 )
 
 
@@ -1294,13 +1294,13 @@ Model Artifact:
     {MODEL_PATH}
 
 Confusion Matrix:
-    part2_confusion_matrix.csv
+    imageclassifier_confusion_matrix.csv
 
 Classification Report:
-    part2_classification_report.txt
+    imageclassifier_classification_report.txt
 
 Confusion Pairs:
-    part2_confusion_pairs.txt
+    imageclassifier_confusion_pairs.txt
 
 Sample Images:
     data/sample_images/

@@ -1,0 +1,38 @@
+Query: How many days do I have to return footwear?
+Expected: ['POL002']
+Retrieved: ['POL002', 'POL001']
+Precision@3: 0.3333
+Recall@3: 1.0000
+
+Query: What is the return period for electronics?
+Expected: ['POL003']
+Retrieved: ['POL003', 'POL004', 'POL011']
+Precision@3: 0.3333
+Recall@3: 1.0000
+
+Query: How long does a COD refund take?
+Expected: ['POL005']
+Retrieved: ['POL005', 'POL006']
+Precision@3: 0.3333
+Recall@3: 1.0000
+
+Query: Can my returned product be collected from my address?
+Expected: ['POL009']
+Retrieved: ['POL011', 'POL009', 'POL014']
+Precision@3: 0.3333
+Recall@3: 1.0000
+
+Query: What should I do if my order arrives damaged?
+Expected: ['POL012']
+Retrieved: ['POL012', 'POL013']
+Precision@3: 0.3333
+Recall@3: 1.0000
+
+Query: What happens if I receive the wrong product?
+Expected: ['POL013']
+Retrieved: ['POL013', 'POL012']
+Precision@3: 0.3333
+Recall@3: 1.0000
+
+Average Precision@3: 0.3333
+Average Recall@3: 1.0000

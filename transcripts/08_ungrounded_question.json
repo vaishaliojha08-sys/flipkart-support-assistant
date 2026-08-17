@@ -1,0 +1,14 @@
+{
+  "title": "Ungrounded policy question",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "What is Flipkart's policy for returning a teleported household robot after 90 days?",
+      "response": {
+        "answer": "I can't provide a policy answer because the knowledge base did not contain sufficiently relevant information.",
+        "source": "policy_kb",
+        "confidence": 0.4842
+      }
+    }
+  ]
+}

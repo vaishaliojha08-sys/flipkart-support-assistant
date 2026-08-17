@@ -1,0 +1,27 @@
+{
+  "title": "Return risk model test",
+  "mode": "MOCK_LLM",
+  "turns": [
+    {
+      "user": "Is order 123456 likely to be returned?",
+      "order_features": {
+        "product_category": "Apparel",
+        "price_inr": 1200,
+        "discount_pct": 25.0,
+        "payment_method": "COD",
+        "customer_tenure_days": 200,
+        "num_previous_orders": 5,
+        "num_previous_returns": 1,
+        "delivery_distance_km": 200.0,
+        "delivery_days": 5,
+        "is_weekend_order": 1,
+        "rating_given": 4.0
+      },
+      "response": {
+        "answer": "The predicted return probability is 61.86%, which places the order in the Medium risk bucket. The bucket is calibrated using t*_rf = 0.5000.",
+        "source": "return_risk_tool",
+        "confidence": 0.6186
+      }
+    }
+  ]
+}
