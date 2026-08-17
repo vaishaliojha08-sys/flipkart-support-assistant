@@ -18,9 +18,9 @@
         "rating_given": 4.0
       },
       "response": {
-        "answer": "The order details and delivered product may be checked before a replacement or refund is approved. (Policy document: POL013)",
-        "source": "policy_kb",
-        "confidence": 0.4884
+        "answer": "The predicted return probability is 61.86%, which places the order in the Medium risk bucket. The bucket is calibrated using t*_rf = 0.5000.",
+        "source": "return_risk_tool",
+        "confidence": 0.6186
       }
     }
   ]

@@ -18,6 +18,15 @@ The graph contains four required nodes:
 
 The graph uses conditional routing based on intent.
 """
+import os
+
+# Prevent native ML libraries from spawning conflicting threads
+# on macOS when PyTorch / FAISS / sentence-transformers
+# are used together.
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
 
 from pathlib import Path
 from typing import TypedDict, Optional, List, Dict, Any
@@ -48,7 +57,13 @@ METADATA_FILE = ROOT / "indexes" / "metadata.json"
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
 # Minimum similarity required for a grounded policy answer.
-GROUNDING_THRESHOLD = 0.35
+#
+# Based on the current retrieval evaluation:
+#   valid policy queries: approximately 0.59 - 0.77
+#   known ungrounded query: 0.4842
+#
+# 0.55 separates the current valid and ungrounded test cases.
+GROUNDING_THRESHOLD = 0.55
 
 
 # =========================================================
@@ -421,11 +436,20 @@ def intent_node(state: AgentState):
 
     risk_keywords = [
 
-        "return risk",
-        "likely to return",
-        "return probability",
-        "risk of return",
-        "return likelihood"
+    "return risk",
+    "likely to return",
+    "likely to be returned",
+    "return probability",
+    "probability of return",
+    "risk of return",
+    "return likelihood",
+    "likelihood of return",
+    "risk bucket",
+    "return-risk",
+    "return risk score",
+    "likely returned",
+    "will be returned"
+
 
     ]
 

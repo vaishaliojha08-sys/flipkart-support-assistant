@@ -5,9 +5,9 @@
     {
       "user": "What risk bucket did that order have?",
       "response": {
-        "answer": "I can't provide a policy answer because the knowledge base did not contain sufficiently relevant information.",
-        "source": "policy_kb",
-        "confidence": 0.267
+        "answer": "I don't have the order details needed to calculate return risk in this fresh conversation. Please provide the order details so I can check it.",
+        "source": "return_risk_tool",
+        "confidence": 0.0
       }
     }
   ]

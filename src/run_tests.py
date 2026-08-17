@@ -38,7 +38,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 from pathlib import Path
 import json
 
-from agent import Conversation
+from src.agent import Conversation
 
 
 # =========================================================
