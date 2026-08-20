@@ -144,7 +144,7 @@ The default Part 3 mode does not require an API key or live LLM. The agent imple
 
 ## Python
 
-The project was developed and tested using Python 3.14.
+The project was developed and tested using Python 3.12.
 
 Create a virtual environment:
 python3 -m venv .venv
@@ -955,7 +955,7 @@ Low:
 p < 0.50
 
 Medium:
-0.50 <= p < 0.66
+0.50 <= p < 0.65
 
 High:
 p >= 0.65
